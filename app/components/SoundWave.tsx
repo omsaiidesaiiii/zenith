@@ -18,7 +18,7 @@ export default function SoundWave() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="relative z-10"
             >
-                <div className="mb-6 text-xs font-bold tracking-[0.4em] text-white/40 uppercase">The Zenith Signature</div>
+                <div className="mb-6 mt-30 text-xs font-bold tracking-[0.4em] text-white/40 uppercase">The Zenith Signature</div>
                 <h2 className="mb-8 text-6xl font-black tracking-tighter text-white md:text-8xl">
                     Silence is <br/> the new loud.
                 </h2>
