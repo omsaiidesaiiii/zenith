@@ -36,6 +36,7 @@ export default function ParallaxGallery() {
                  <motion.div style={{ y }} className="flex w-1/3 flex-col gap-6 md:gap-12">
                      <div className="group relative aspect-[3/4] w-full overflow-hidden rounded-sm bg-zinc-900">
                          <img src={images[0]} className="h-full w-full object-cover opacity-60 grayscale transition-all duration-700 group-hover:scale-110 group-hover:opacity-100 group-hover:grayscale-0" alt="Detail 1"/>
+                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.6)_100%)] mix-blend-multiply transition-opacity group-hover:opacity-40"></div>
                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
                      </div>
                  </motion.div>
@@ -44,6 +45,7 @@ export default function ParallaxGallery() {
                  <motion.div style={{ y: yReverse }} className="flex w-1/3 flex-col gap-6 pt-20 md:gap-12 md:pt-40">
                      <div className="group relative aspect-[3/4] w-full overflow-hidden rounded-sm bg-zinc-900">
                          <img src={images[1]} className="h-full w-full object-cover opacity-60 grayscale transition-all duration-700 group-hover:scale-110 group-hover:opacity-100 group-hover:grayscale-0" alt="Detail 2"/>
+                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.6)_100%)] mix-blend-multiply transition-opacity group-hover:opacity-40"></div>
                      </div>
                      <div className="px-4 text-center">
                         <p className="font-mono text-xs uppercase tracking-widest text-zinc-500">The Art of Sound</p>
@@ -54,6 +56,7 @@ export default function ParallaxGallery() {
                  <motion.div style={{ y }} className="flex w-1/3 flex-col gap-6 md:gap-12">
                      <div className="group relative aspect-[3/4] w-full overflow-hidden rounded-sm bg-zinc-900">
                          <img src={images[2]} className="h-full w-full object-cover opacity-60 grayscale transition-all duration-700 group-hover:scale-110 group-hover:opacity-100 group-hover:grayscale-0" alt="Detail 3"/>
+                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.6)_100%)] mix-blend-multiply transition-opacity group-hover:opacity-40"></div>
                      </div>
                  </motion.div>
 

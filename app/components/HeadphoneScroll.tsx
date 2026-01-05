@@ -196,6 +196,10 @@ export default function HeadphoneScroll() {
             className="block h-full w-full touch-none" 
             style={{ width: '100%', height: '100%' }}
         />
+        
+        {/* Soft Vignette Overlay for seamless blending */}
+        <div className="pointer-events-none absolute inset-0 z-[1] bg-[radial-gradient(circle_at_50%_50%,transparent_60%,#050505_100%)] opacity-80"></div>
+        <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-[#050505]/20 via-transparent to-[#050505]/20"></div>
 
         {/* Text Overlays */}
         <div className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center px-6">
