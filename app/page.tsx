@@ -17,7 +17,7 @@ export default function Home() {
       <TechSpecs />
       
       {/* Pre-order Call to Action at bottom */}
-      <section className="relative overflow-hidden mb-20 text-center">
+      <section className="relative overflow-hidden py-40 text-center">
          <div className="absolute inset-0 bg-gradient-to-b from-[#050505] via-zinc-900/40 to-[#050505] pointer-events-none"></div>
          <div className="relative z-10 mx-auto max-w-2xl px-6">
             <h2 className="text-5xl font-bold tracking-tighter md:text-7xl">Ready for Zenith?</h2>

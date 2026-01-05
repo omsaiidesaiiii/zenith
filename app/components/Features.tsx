@@ -1,6 +1,6 @@
 export default function Features() {
     return (
-      <section className="bg-[#050505] py-32 text-white">
+      <section className="bg-[#050505] py-40 text-white">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-24 text-center">
             <h2 className="text-xs font-bold tracking-[0.2em] text-zinc-500 uppercase">Why Zenith X</h2>

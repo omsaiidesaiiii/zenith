@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-      <footer className="border-t border-white/10 bg-[#050505] py-12 text-sm text-zinc-500">
+      <footer className="border-t border-white/10 bg-[#050505] py-24 text-sm text-zinc-500">
         <div className="mx-auto max-w-7xl px-6 flex flex-col items-center justify-between gap-6 md:flex-row">
             <div>
                <span className="text-white font-bold tracking-tighter">ZENITH AUDIO</span>

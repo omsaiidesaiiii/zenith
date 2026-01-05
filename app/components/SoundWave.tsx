@@ -7,7 +7,7 @@ export default function SoundWave() {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     return (
-        <section ref={ref} className="relative flex flex-col items-center justify-center  bg-[#050505] text-center px-6 overflow-hidden">
+        <section ref={ref} className="relative flex flex-col items-center justify-center py-40 bg-[#050505] text-center px-6 overflow-hidden">
             
             {/* Background ambient glow - Mono/Silver */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-white/5 blur-[100px] rounded-full pointer-events-none"></div>

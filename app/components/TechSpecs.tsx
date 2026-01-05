@@ -11,14 +11,19 @@ export default function TechSpecs() {
     ];
   
     return (
-      <section className="bg-[#050505] py-24 text-white">
-          <div className="mx-auto max-w-4xl px-6">
-              <h2 className="mb-12 text-3xl font-bold tracking-tight md:text-4xl">Technical Specifications</h2>
-              <div className="divide-y divide-white/10">
+      <section className="bg-[#050505] py-32 text-white relative border-t border-white/5">
+          <div className="mx-auto max-w-5xl px-6">
+              
+              <div className="mb-20 text-center">
+                  <h2 className="text-xs font-bold tracking-[0.2em] text-zinc-500 uppercase mb-6">Specifications</h2>
+                  <h3 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">The finer details.</h3>
+              </div>
+
+              <div className="grid gap-x-20 gap-y-8 md:grid-cols-2">
                   {specs.map((spec, i) => (
-                      <div key={i} className="flex flex-col py-6 md:flex-row md:justify-between md:py-8 transition-colors hover:bg-white/5 px-4 rounded-lg">
-                          <span className="mb-2 text-sm font-medium text-zinc-500 md:mb-0">{spec.label}</span>
-                          <span className="text-lg font-medium">{spec.value}</span>
+                      <div key={i} className="group flex flex-col border-b border-white/10 py-6 transition-colors hover:border-white/30">
+                          <span className="mb-2 text-xs font-bold tracking-wider text-zinc-500 uppercase">{spec.label}</span>
+                          <span className="text-lg font-medium text-white/90">{spec.value}</span>
                       </div>
                   ))}
               </div>
