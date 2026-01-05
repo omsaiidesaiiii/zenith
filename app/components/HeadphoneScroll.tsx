@@ -5,7 +5,11 @@ import { useScroll, useTransform, motion, useSpring } from 'framer-motion';
 
 const FRAME_COUNT = 240;
 
-export default function HeadphoneScroll() {
+interface HeadphoneScrollProps {
+    onLoaded?: () => void;
+}
+
+export default function HeadphoneScroll({ onLoaded }: HeadphoneScrollProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [images, setImages] = useState<HTMLImageElement[]>([]);
@@ -60,8 +64,9 @@ export default function HeadphoneScroll() {
   useEffect(() => {
     if (imagesLoaded === FRAME_COUNT) {
       setIsLoading(false);
+      if (onLoaded) onLoaded();
     }
-  }, [imagesLoaded]);
+  }, [imagesLoaded, onLoaded]);
 
   // Render to canvas
   useEffect(() => {

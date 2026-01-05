@@ -18,7 +18,7 @@ export default function Navbar() {
   });
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[100] flex justify-center pt-6 pointer-events-none">
+    <div className="flex justify-center pt-6 pointer-events-none w-full">
         <motion.nav
             variants={{
                 visible: { y: 0, opacity: 1, scale: 1 },

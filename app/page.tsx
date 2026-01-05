@@ -5,12 +5,30 @@ import Navbar from "./components/Navbar";
 import ParallaxGallery from "./components/ParallaxGallery";
 import SoundWave from "./components/SoundWave";
 import TechSpecs from "./components/TechSpecs";
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function Home() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <main className="min-h-screen bg-[#050505] selection:bg-white/30 text-white scroll-smooth cursor-default">
-      <Navbar />
-      <HeadphoneScroll />
+      <AnimatePresence>
+        {isLoaded && (
+            <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="fixed top-0 left-0 right-0 z-[100]"
+            >
+                <Navbar />
+            </motion.div>
+        )}
+      </AnimatePresence>
+      
+      <HeadphoneScroll onLoaded={() => setIsLoaded(true)} />
+      
+      {/* Content wrapper that fades in slightly to avoid harsh pop-in if desired, or just let scroll handle it */}
       <SoundWave />
       <Features />
       <ParallaxGallery />
